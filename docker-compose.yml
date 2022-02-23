@@ -1,0 +1,20 @@
+version: '3'
+services:
+  goodowl-saas:
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    volumes:
+      - /app/node_modules
+      - .:/app
+  # test:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   volumes:
+  #     - /app/node_modules
+  #     - .:/app
+  #   command: ['npm', 'run', 'test']

@@ -1,0 +1,270 @@
+:root {
+  --color-primary: #4298b5;
+  --color-primary-dark: #003057;
+  --color-primary-medium: #8bd1e8;
+  --color-primary-light: #c8e6f0;
+  --color-dark: #00223e;
+}
+
+/** Tailwind base styles */
+@tailwind base;
+
+/* Custom Fonts */
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-thin-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-thin-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-thinitalic-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-thinitalic-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-extralight-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-extralight-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-extralightitalic-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-extralightitalic-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-lightitalic-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-lightitalic-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-italic-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-medium-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-mediumitalic-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-mediumitalic-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-semibold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-semibolditalic-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-semibolditalic-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-bolditalic-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-bolditalic-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-extrabold-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-extrabold-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-extrabolditalic-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-extrabolditalic-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-black-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-black-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat-blackitalic-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-blackitalic-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Custom base styles */
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+body {
+  width: 100%;
+}
+
+h1 {
+  @apply text-4xl uppercase font-bold;
+}
+
+h2 {
+  @apply text-2xl uppercase font-bold;
+}
+
+h3 {
+  @apply text-lg uppercase font-bold;
+}
+
+h4 {
+  @apply text-base font-bold;
+}
+
+p {
+  @apply text-base;
+}
+
+@screen md {
+  h1 {
+    @apply text-7xl;
+  }
+
+  h2 {
+    @apply text-6xl;
+  }
+
+  h4 {
+    @apply text-xl;
+  }
+}
+
+a {
+  transition: color 0.2s ease-in-out;
+}
+
+/** Tailwind components styles */
+@tailwind components;
+
+/** Tailwind utilities style */
+@tailwind utilities;
+
+/* Custom utilities */
+.bg-gradient-1 {
+  background: transparent
+    linear-gradient(180deg, theme('colors.primary.dark') 0%, theme('colors.primary') 100%) 0% 0%
+    no-repeat;
+}
+
+.bg-gradient-2 {
+  background: transparent
+    linear-gradient(180deg, theme('colors.primary') 0%, theme('colors.primary.middle') 100%) 0% 0%
+    no-repeat;
+}
+
+.parsed-text p {
+  margin-bottom: 1rem;
+}
+
+svg {
+  max-width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+.module {
+  box-shadow: 0px 2px 6px #0000000a;
+}
+.module + .module {
+  margin-top: 0.5rem;
+}
+
+.DayPicker .DayPicker-Month {
+  background-color: white;
+}
+
+.DayPicker .DayPicker-Month .DayPicker-Caption {
+  background-color: white;
+  margin-bottom: 0;
+}
+
+.DayPicker .DayPicker-Day--selected.DayPicker-Day--workingDays {
+  background-color: var(--color-primary) !important;
+}
+
+.rbc-overlay .rbc-overlay-header {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #888888;
+  font-weight: 600;
+}

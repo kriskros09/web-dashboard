@@ -1,0 +1,36 @@
+const initialState = {
+  search: [],
+  currentSectId: '',
+  currentServId: '',
+  currentLawId: '',
+  currentCity: '',
+  currentCountry: '',
+  currentRegion: '',
+  coordinates: {
+    lat: 45.50884,
+    lng: -73.58781,
+  },
+  maxPrice: 0,
+  tileAvailabilities: [],
+  professionalTile: {
+    proId: '',
+    photo: '',
+    firstName: '',
+    lastName: '',
+    price: 0,
+    city: '',
+    years: 0,
+    professions: '',
+    laws: '',
+    languages: '',
+    selectedLaw: '',
+    selectedSector: '',
+    selectedService: '',
+    description: '',
+    reviews: 0,
+    reviewsNumber: 0,
+  },
+  currentPro: '',
+}
+
+export default initialState

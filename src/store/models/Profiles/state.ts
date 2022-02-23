@@ -1,0 +1,41 @@
+const initialState = {
+  user: {
+    userId: '',
+    firstName: '',
+    lastName: '',
+    birthDate: '',
+    email: '',
+    phone: '',
+    photo: '',
+    addresses: [],
+  },
+  pro: {
+    proId: '',
+    proEmail: '',
+    description: '',
+    photo: '',
+    languages: [],
+    professions: [],
+    licences: [],
+    addresses: [],
+    phone: '',
+  },
+  firm: {
+    firmId: '',
+    langId: '',
+    name: '',
+    manager: '',
+    logo: '',
+    paypalEmail: '',
+    taxNumbers: [],
+    addresses: [],
+  },
+  updateAddress: null,
+  createAddress: null,
+  deleteAddress: null,
+  createLicence: null,
+  errors: [],
+  isLoading: false,
+}
+
+export default initialState

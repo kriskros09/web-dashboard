@@ -1,0 +1,42 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Intro front-end",
+  "steps": [
+    {
+      "file": "src/tailwind.config.js",
+      "line": 1,
+      "description": "This file defines base theme for tailwind css classes props used in all components"
+    },
+    {
+      "directory": "src/pages",
+      "description": "All the existing pages"
+    },
+    {
+      "directory": "src/components",
+      "description": "All the components are here. They are all definied by name and all shared components are in shared folders"
+    },
+    {
+      "directory": "src/router",
+      "description": "This diles allows you to add page routes"
+    },
+    {
+      "file": "src/assets/styles/tailwind.css",
+      "line": 1,
+      "description": "Custom styles can be added at the bottom of this file\n"
+    },
+    {
+      "file": "src/store/models/index.ts",
+      "line": 1,
+      "description": "Here are all the models for the sotres and each store contains a action, graphql query and types"
+    },
+    {
+      "directory": "src/assets",
+      "description": "Images, fonts and compiled styles"
+    },
+    {
+      "directory": "src/i18n",
+      "description": "Translations configs are here for form errors, server errors and other"
+    }
+  ],
+  "ref": "goodowl-master"
+}
