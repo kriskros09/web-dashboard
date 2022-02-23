@@ -1,6 +1,6 @@
 ## About The Project
 
-This project is a React Typescript project and it utilises an API built by GoodOwl. It also uses other third paty libraries for different features ( take a look a the pakcage.json for more information )
+This project is a React Typescript project. It also uses other third paty libraries for different features ( take a look a the pakcage.json for more information )
 
 ### Built With
 
